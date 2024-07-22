@@ -25,7 +25,6 @@
     <div class="preloader">
       <div class="counter">0</div>
     </div>
-    <div class="effect"></div>
     <main id="scrollbar">
       <!-- Menu -->
       <div class="header">
@@ -160,31 +159,5 @@
     </main>
   </body>
   <script src="js/main.js"></script>
-  <script>
-    const phoneIcon = document.getElementById("phoneIcon");
-    const messageBadge = document.getElementById("messageBadge");
-
-    phoneIcon.addEventListener("click", function () {
-      const phoneNumber = "+998911525752"; // Telefon raqamining qiymati
-
-      // Telefon raqamini clipboardga saqlash
-      navigator.clipboard
-        .writeText(phoneNumber)
-        .then(() => {
-          // Bildirishnomani ko'rsatish
-          showBadge(`Nusxalandi: ${phoneNumber}`, "success");
-        })
-        .catch((error) => {
-          // Xatolik haqida bildirishnoma ko'rsatish
-          showBadge("Xato: nuxsalanmadi.", "error");
-          console.error("Clipboard error:", error);
-        });
-    });
-
-    function showBadge(message, type) {
-      messageBadge.textContent = message;
-      messageBadge.className = "badge " + type;
-      messageBadge.style.display = "block";
-    }
-  </script>
+  <script src="js/register.js"></script>
 </html>
