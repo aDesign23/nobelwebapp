@@ -93,7 +93,7 @@ main {
 .header {
   width: 380px;
   position: fixed;
-  bottom: 30px;
+  bottom: 40px;
   padding: 0 15px 0 0;
   display: flex;
   align-items: center;
@@ -113,7 +113,7 @@ menu {
   margin: 0;
   padding: 0;
   position: fixed;
-  bottom: 30px;
+  bottom: 40px;
   left: 50%;
   z-index: 2;
   transform: translateX(-50%);
