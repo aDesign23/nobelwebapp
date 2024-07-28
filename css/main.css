@@ -82,7 +82,7 @@ body {
 
 main {
   width: 380px;
-  height: calc(100vh - 90px);
+  height: calc(100vh - 100px);
   overflow-y: scroll;
   overflow-x: hidden;
   border-radius: 10px;
